@@ -38,3 +38,9 @@ print()
 print(parrot[3 - len(parrot)])
 print(parrot[6 - len(parrot)])
 print(parrot[8 - len(parrot)])
+
+print()
+print(parrot[0:6])  # up to but not including - Norweg
+print(parrot[0:9])  # up to but not including - Norwegian
+print(parrot[:9])   # up to but not including - Norwegian
+print(parrot[10:])   # Blue
