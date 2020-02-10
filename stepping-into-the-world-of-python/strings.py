@@ -8,8 +8,8 @@ greeting = "Hello"
 name = input("Enter your name: ")
 age = 24
 
-print(type(greeting))
-print(type(age))
-
 # Greeting will be printed
 print(greeting + ' ' + name + '!')
+
+print(type(greeting))
+print(type(age))
