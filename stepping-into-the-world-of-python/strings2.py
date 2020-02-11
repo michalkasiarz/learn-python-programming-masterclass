@@ -44,3 +44,8 @@ print(parrot[0:6])  # up to but not including - Norweg
 print(parrot[0:9])  # up to but not including - Norwegian
 print(parrot[:9])   # up to but not including - Norwegian
 print(parrot[10:])   # Blue
+
+# negative indexing again
+
+print(parrot[-4:-2])    # Bl from -4 index, up to but not including -2
+print(parrot[-4:12])    # Bl from -4 index, up to but not including 12 (positive index)
