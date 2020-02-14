@@ -17,18 +17,22 @@ guess = int(input())
 notCorrectGuess = True
 
 while notCorrectGuess:
-    if guess < answer:
+    if guess == 0:
+        print('You quit the game.')
+        break
+    elif guess < answer:
         print('Too low!')
         guess = int(input())
         if guess == answer:
             print("Well done, you guessed it!")
-            break
+            notCorrectGuess = False
     elif guess > answer:
         print('Too high!')
         guess = int(input())
         if guess == answer:
             print("Well done, you guessed it!")
-            break
+            notCorrectGuess = False
     else:
         print('You got it first time!')
-        break
+        notCorrectGuess = False
+
