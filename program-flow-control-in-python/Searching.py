@@ -11,4 +11,19 @@ for index in range(len(shopping_list)):
         found_at = index
         break   # if an item is found, the loop is ended
 
-print('Item found at position {}.'.format(found_at))
+if found_at is not None:
+    print('Item found at position {}.'.format(found_at))
+else:
+    print('Not found at position {}'.format(item_to_find))
+
+print()
+
+# better way to write this code
+
+if item_to_find in shopping_list:
+    found_at = shopping_list.index(item_to_find)
+
+if found_at is not None:
+    print('Item found at position {}.'.format(found_at))
+else:
+    print('Not found at position {}'.format(item_to_find))
