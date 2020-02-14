@@ -1,6 +1,11 @@
-answer = 5
+import random
 
-print('Please guess a number between 1 and 10: ')
+# assigns a random number from 1 to 10 to answer variable
+highest = 10
+answer = random.randint(1, highest)
+print(answer)   # TODO: remove after answering
+
+print('Please guess a number between 1 and {}: '.format(highest))
 guess = int(input())
 
 if guess < answer:
