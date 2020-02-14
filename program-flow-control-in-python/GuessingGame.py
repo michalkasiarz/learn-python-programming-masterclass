@@ -14,9 +14,8 @@ print(answer)   # TODO: remove after answering
 
 print('Please guess a number between 1 and {}: '.format(highest))
 guess = int(input())
-notCorrectGuess = True
 
-while notCorrectGuess:
+while guess != answer:
     if guess == 0:
         print('You quit the game.')
         break
@@ -25,14 +24,11 @@ while notCorrectGuess:
         guess = int(input())
         if guess == answer:
             print("Well done, you guessed it!")
-            notCorrectGuess = False
     elif guess > answer:
         print('Too high!')
         guess = int(input())
         if guess == answer:
             print("Well done, you guessed it!")
-            notCorrectGuess = False
-    else:
-        print('You got it first time!')
-        notCorrectGuess = False
+else:
+    print('You got it first time!')
 
