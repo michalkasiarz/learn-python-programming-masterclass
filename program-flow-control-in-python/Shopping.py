@@ -10,6 +10,6 @@ print()
 # another way to exclude 'spam'
 for item in shopping_list:
     if item == 'spam':
-        continue
+        continue    # continue causes all the remaining code in the block to be skipped
 
     print('Buy ' + item)
