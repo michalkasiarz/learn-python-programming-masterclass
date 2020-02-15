@@ -18,6 +18,7 @@ Modify the program so that the menu is printed again, if they choose
 an invalid option.
 '''
 
+isPlaying = True
 while isPlaying:
     user_choice = int(input('\n\nHello! Choose an option here:\n\n'
                             '\t1) Learn Python'
@@ -39,7 +40,7 @@ while isPlaying:
             print('Your choice: {}. Hohoho!'.format(user_choice))
             break
         else:
-            print('Your choice: {}. This choice is invalid. Choose again, please.'
-                  .format(user_choice))
             break
+    else:
+        isPlaying = False
 print('Game over.')
