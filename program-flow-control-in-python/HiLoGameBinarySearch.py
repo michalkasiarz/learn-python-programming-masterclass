@@ -6,10 +6,10 @@ high = 1000
 print('Please think of a number betwen {} and {}.'.format(low, high))
 input('Press ENTER to start')
 
-guess = 1
+guesses = 1
 while True:
     guess = low + (high - low) // 2  # calculates the midpoint
-    high_low = input('My guess is {}. Should I guess higher or lower?'
+    high_low = input('My guess is {}. Should I guess higher or lower? '
                      'Enter h or l, or c if my guess was correct'
                      .format(guess)).casefold()
     if high_low == 'h':
@@ -19,9 +19,9 @@ while True:
         # guess lower. The high end of the range becomes 1 less than the guess
         high = guess - 1
     elif high_low == 'c':
-        print('I got in in {} guesses!'.format(guess))
+        print('I got in {} guesses!'.format(guesses))
         break
     else:
         print('Please enter h, l or c')
 
-    guess = guesses + 1
+    guesses = guesses + 1
