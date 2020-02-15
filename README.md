@@ -5,8 +5,8 @@ Learn Python Programming Masterclass from Tim Buchalka's Learn Programming Acade
 :wrench: Language: :heartpulse:	Python 3.7 :heartpulse:		
 
 :ballot_box_with_check: Stepping into the world of Python  
-:point_right: Program Flow Control in Python  
-:timer_clock:	Lists, Ranges & Tuples in Python  
+:ballot_box_with_check: Program Flow Control in Python  
+:point_right: Lists, Ranges & Tuples in Python  
 :timer_clock:	The binary number system explained  
 :timer_clock:	Python Dictionaries and Sets  
 :timer_clock:	Input and Output (I/O) in Python  
