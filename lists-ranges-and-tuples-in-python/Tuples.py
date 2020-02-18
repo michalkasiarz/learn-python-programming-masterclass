@@ -22,3 +22,10 @@ print(metallica[2])
 imelda = imelda[0], "Imelda May", imelda[2]     # assigned to new object
 print(imelda)
 
+metallica2 = ["Ride the Lightning", "Metallica", 1984]
+print(metallica2)
+# lists are directly editable
+metallica2[0] = "Master of Puppets"
+print(metallica2)
+
+
