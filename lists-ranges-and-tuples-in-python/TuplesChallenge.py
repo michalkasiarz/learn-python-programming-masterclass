@@ -19,3 +19,10 @@ print(f"Album details:\n"
       f"Artist: {artist},\n"
       f"Year: {year},\n"
       f"Tracks: \n\t{tracks[0][1]},\n\t{tracks[1][1]},\n\t{tracks[2][1]},\n\t{tracks[3][1]}.")
+
+
+print("\n\nList of tracks again:\n\n")
+# Alternative way of accessing tracks:
+for song in tracks:
+    track, title = song
+    print(f"\tTrack no. {track}, title: {title}")
