@@ -32,4 +32,12 @@ r = range(0, 10)
 for i in r[::-1]:
     print(i)
 
+# little challenge
+
+o = range(0, 100, 4)
+print(o)
+p = o[::5]
+print(p)
+for i in p:
+    print(i)
 
