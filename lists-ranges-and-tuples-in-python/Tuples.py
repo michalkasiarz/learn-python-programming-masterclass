@@ -28,4 +28,8 @@ print(metallica2)
 metallica2[0] = "Master of Puppets"
 print(metallica2)
 
-
+# unpacking a tuple
+title, artist, year = imelda
+print(title)
+print(artist)
+print(year)
