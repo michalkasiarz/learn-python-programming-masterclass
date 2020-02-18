@@ -24,5 +24,5 @@ print(f"Album details:\n"
 print("\n\nList of tracks again:\n\n")
 # Alternative way of accessing tracks:
 for song in tracks:
-    track, title = song
+    track, title = song     # track number - track, title of the song - packed into song
     print(f"\tTrack no. {track}, title: {title}")
