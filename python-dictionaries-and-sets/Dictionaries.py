@@ -14,3 +14,7 @@ print(fruit["lemon"])
 # adding an entry to the dictionary
 fruit["pear"] = "an odd shaped apple"
 print(fruit["pear"])
+
+# overriding existing value
+fruit["pear"] = "something you would like"
+print(fruit["pear"])
