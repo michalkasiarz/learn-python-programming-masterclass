@@ -22,3 +22,8 @@ print(fruit["pear"])
 # deleting an element with del
 del fruit["lemon"]
 print(fruit)
+
+# clearing the entire dictionary
+fruit.clear()
+
+print(fruit)
