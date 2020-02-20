@@ -10,3 +10,7 @@ print(fruit)
 
 # accessing an element in a dict with a key
 print(fruit["lemon"])
+
+# adding an entry to the dictionary
+fruit["pear"] = "an odd shaped apple"
+print(fruit["pear"])
