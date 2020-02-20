@@ -18,3 +18,7 @@ print(fruit["pear"])
 # overriding existing value
 fruit["pear"] = "something you would like"
 print(fruit["pear"])
+
+# deleting an element with del
+del fruit["lemon"]
+print(fruit)
