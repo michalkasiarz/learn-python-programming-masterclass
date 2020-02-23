@@ -16,6 +16,17 @@ while True:
         description = fruit.get(dict_key)
         print(description)
     else:
-        print("We don't have a " + dict_key)
+        print("We don't have a " + dict_key + ".")
+
+# another way
+"""
+while True:
+    dict_key = input("Please enter a fruit: ")
+    if dict_key == "quit":
+        break
+    description = fruit.get(dict_key, "We don't have a " + dict_key + ".")
+    print(description)
+"""
+
 
 
