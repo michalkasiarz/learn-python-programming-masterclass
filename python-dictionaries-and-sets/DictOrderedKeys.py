@@ -24,3 +24,26 @@ for f in sorted(fruit.keys()):
 # printing values of dict
 for value in fruit.values():
     print(value)
+
+print("-" * 10)
+
+# adding new fruit
+fruit["tomato"] = "not good with ice cream"
+
+# printing keys again
+for i in fruit.keys():
+    print(i)
+
+print("-" * 10)
+
+# .items method returns a list of tuples here
+print(fruit.items())
+for i in fruit.items():
+    print(i)
+
+# tuple of tuples
+f_tuple = tuple(fruit.items())
+
+for snack in f_tuple:
+    item, desc = snack  # tuple unpacking
+    print(item + " is " + desc + ".")
