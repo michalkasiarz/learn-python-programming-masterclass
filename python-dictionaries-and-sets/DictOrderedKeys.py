@@ -20,3 +20,7 @@ for i in ordered_key:
 # the same result here! sorted() function RETURNS a sorted list
 for f in sorted(fruit.keys()):
     print(f + " - " + fruit[f])
+
+# printing values of dict
+for value in fruit.values():
+    print(value)
