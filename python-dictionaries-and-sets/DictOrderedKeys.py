@@ -15,3 +15,8 @@ ordered_key.sort()
 # prints a key: i, and the the value: fruit[i]
 for i in ordered_key:
     print(i + " - " + fruit[i])
+
+
+# the same result here! sorted() function RETURNS a sorted list
+for f in sorted(fruit.keys()):
+    print(f + " - " + fruit[f])
