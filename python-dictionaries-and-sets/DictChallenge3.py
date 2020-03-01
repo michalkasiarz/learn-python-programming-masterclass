@@ -7,6 +7,8 @@
 # locations dictionary modified so that everything is in a single dictionary.
 # N.B. Yes the code has some errors, thats what you need to fix!
 
+# TODO: exits!
+
 locations = {0: {"desc": "You are sitting in front of a computer learning Python",
                  "exits": {},
                  "namedExits": {}},
