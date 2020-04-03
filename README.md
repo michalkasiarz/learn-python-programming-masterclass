@@ -2,7 +2,7 @@
 
 Learn Python Programming Masterclass from Tim Buchalka's Learn Programming Academy :link: [Learn Python Programming Masterclass](https://www.udemy.com/course/python-the-complete-python-developer-course/)  
  
-:wrench: Language: :heartpulse:	Python 3.7 :heartpulse:		
+:wrench: Language: Python 3.7
 
 :ballot_box_with_check: Stepping into the world of Python  
 :ballot_box_with_check: Program Flow Control in Python  
