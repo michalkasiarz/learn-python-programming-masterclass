@@ -1,4 +1,4 @@
-# Sets
+# Sets - UNORDERED
 
 farm_animals = {"sheep", "cow", "hen"}
 print(farm_animals)
@@ -18,3 +18,48 @@ farm_animals.add("horse")
 wild_animals.add("horse")
 print(farm_animals)
 print(wild_animals)
+
+# printing set with even numbers
+even = set(range(0, 40, 2))
+print(even)
+
+print()
+
+squares_tuple = (4, 6, 9, 16, 25)
+squares = set(squares_tuple)
+print(squares)
+print("=============")
+
+# using union
+even = set(range(0, 40, 2))
+print("Even: " + str(even))
+print(str(len(even)) + " elements")
+
+squares_tuple = (4, 6, 9, 16, 25)
+squares = set(squares_tuple)
+print("Squares: " + str(squares))
+print(str(len(squares)) + " elements")
+print("=============")
+print("even.union(squares): " + str(even.union(squares)))
+print(str(len(even.union(squares))) + " elements")
+print("squares.union(even): " + str(squares.union(even)))
+print("=============")
+# using intersection - present the number present in both sets
+print(even.intersection(squares))
+print(even & squares)
+print(squares.intersection(even))
+print(squares & even)
+print("=============")
+even = set(range(0, 40, 2))
+print("Sorted even: " + str(sorted(even)))
+squares_tuple = (4, 6, 9, 16, 25)
+squares = set(squares_tuple)
+print("Sorted squares: " + str(sorted(squares)))
+print("Even minus squares")
+print("sorted(even.difference(squares)): " + str(sorted(even.difference(squares))))
+print("(sorted(even - squares)): " + str(sorted(even - squares)))
+print("squares minus even")
+print("str(squares.difference(even))" + str(squares.difference(even)))
+print("str(squares - even)" + str(squares - even))
+
+
