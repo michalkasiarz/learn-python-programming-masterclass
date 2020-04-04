@@ -77,3 +77,9 @@ print(sorted(even))
 print(squares)
 even.difference_update(squares)
 print(sorted(even))
+
+print("Symmetric even minus squares")
+print(sorted(even.symmetric_difference(squares)))
+
+print("Symmetric squares minus even")
+print(sorted(squares.symmetric_difference(even)))
