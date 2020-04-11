@@ -2,4 +2,4 @@ with open(r"C:\Users\micha\Documents\buchalka-python\learn-python-programming-ma
     line = jabber.readline()
     while line:
         print(line, end="")
-    #    line = jabber.readline()
+        line = jabber.readline()
