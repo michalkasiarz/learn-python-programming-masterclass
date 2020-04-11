@@ -3,3 +3,5 @@ Alice Springs
 Darwin
 Melbourne
 Sydney
+Warsaw
+Cracow
