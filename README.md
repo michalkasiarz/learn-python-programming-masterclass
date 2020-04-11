@@ -8,8 +8,8 @@ Learn Python Programming Masterclass from Tim Buchalka's Learn Programming Acade
 :ballot_box_with_check: Program Flow Control in Python  
 :ballot_box_with_check: Lists, Ranges & Tuples in Python  
 :ballot_box_with_check: The binary number system explained  
-:point_right: Python Dictionaries and Sets  
-:timer_clock:	Input and Output (I/O) in Python  
+:ballot_box_with_check: Python Dictionaries and Sets  
+:point_right: Input and Output (I/O) in Python  
 :timer_clock:	Modules and Functions in Python  
 :timer_clock:	Object Oriented Python  
 :timer_clock:	Using Databases in Python  
