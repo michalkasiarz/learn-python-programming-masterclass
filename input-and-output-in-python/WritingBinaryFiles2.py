@@ -12,4 +12,14 @@ with open("binary2", "bw") as bin_file:
     bin_file.write(d.to_bytes(4, "big"))
     bin_file.write(d.to_bytes(4, "little"))
 
-
+with open("binary2", "br") as bin_file:
+    e = int.from_bytes(bin_file.read(2), "big")
+    print(e)    # 65534
+    f = int.from_bytes(bin_file.read(2), "big")
+    print(f)    # 65535
+    g = int.from_bytes(bin_file.read(4), "big")
+    print(g)    # 65535
+    h = int.from_bytes(bin_file.read(4), "big")
+    print(h)    # 2998302
+    i = int.from_bytes(bin_file.read(4), "big")  # big int format
+    print(i)    # 515910912
