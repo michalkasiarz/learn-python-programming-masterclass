@@ -1,6 +1,6 @@
 import shelve
 
-# Shelve module
+# Getting values from shelve object in alphabetical order
 
 fruit = shelve.open("ShelfTest")
 
