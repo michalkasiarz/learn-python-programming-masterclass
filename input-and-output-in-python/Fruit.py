@@ -10,11 +10,14 @@ fruit["grape"] = "a small, sweet fruit growing in bunches"
 fruit["lime"] = "a sour, green citrus fruit"
 
 while True:
-    shelf_key = input("Please enter a fruit: ")
-    if shelf_key == "quit":
+    dict_key = input("Please enter a fruit: ")
+    if dict_key == "quit":
         break
 
-    description = fruit.get(shelf_key, "We don't have a " + shelf_key)
-    print(description)
+    if dict_key in fruit:
+        description = fruit[dict_key]
+        print(description)
+    else:
+        print("We don't have a " + dict_key)
 
 fruit.close()
