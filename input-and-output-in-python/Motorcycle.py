@@ -10,3 +10,7 @@ with shelve.open("bike") as bike:
 
     print(bike["engine_size"])
     print(bike["color"])
+
+# for loop print the keys
+    for key in bike:
+        print(key)
