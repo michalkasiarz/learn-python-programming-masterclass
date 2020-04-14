@@ -11,3 +11,5 @@ with shelve.open("ShelfTest") as fruit:
 
     print(fruit["lemon"])
     print(fruit["grape"])
+
+print(fruit)
