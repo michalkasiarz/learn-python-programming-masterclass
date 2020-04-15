@@ -24,8 +24,11 @@ with shelve.open("recipes", writeback=True) as recipes:
     # temp_list = recipes["pasta"]
     # temp_list.append("tomato")
     # recipes["pasta"] = temp_list
+    recipes["soup"] = soup
+    recipes.sync()
+    soup.append("cream")
 
-    recipes["soup"].append("croutch")
+    recipes["soup"].append("croutons")
 
     for snack in recipes:
         print(snack, recipes[snack])
