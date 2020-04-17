@@ -6,7 +6,7 @@ import random
 
 input("Press enter to start!")
 
-wait_time = random.randint(1, 6)
+wait_time = random.randint(1, 3)
 time.sleep(wait_time)
 start_time = my_timer()
 input("Press enter to stop!")
