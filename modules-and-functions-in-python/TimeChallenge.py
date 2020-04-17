@@ -5,18 +5,14 @@
 # Use the documentation for the get_clock_info() function
 # to work out how to call it for each of the clocks.
 
-from time import time
-from time import perf_counter
-from time import monotonic
-from time import process_time
+import time
 
-time1 = time()
-time2 = perf_counter()
-time3 = monotonic()
-time4 = process_time()
+time1 = time.get_clock_info("time")
+time2 = time.get_clock_info("perf_counter")
+time3 = time.get_clock_info("monotonic")
+time4 = time.get_clock_info("process_time")
 
-times = time1, time2, time3, time4
+times = {"Time": time1, "Perf_counter": time2, "Monotonic": time3, "Process_time": time4}
 
-for time in times:
-    print(time)
-
+for key, value in times.items():
+    print(key + ": " + str(value))
