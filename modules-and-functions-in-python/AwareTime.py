@@ -23,8 +23,8 @@ t = s + (60 * 60)
 gb = pytz.timezone("GB")
 
 # tz info object
-dt1 = pytz.utc.localize(datetime.datetime.fromtimestamp(s)).astimezone(gb)
-dt2 = pytz.utc.localize(datetime.datetime.fromtimestamp(t)).astimezone(gb)
+dt1 = pytz.utc.localize(datetime.datetime.utcfromtimestamp(s)).astimezone(gb)
+dt2 = pytz.utc.localize(datetime.datetime.utcfromtimestamp(t)).astimezone(gb)
 
 print("{} seconds since the epoch is {}".format(s, dt1))
 print("{} seconds since the epoch is {}".format(t, dt2))
