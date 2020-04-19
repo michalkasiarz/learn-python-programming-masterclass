@@ -29,8 +29,8 @@ button1 = tkinter.Button(rightFrame, text="button1")
 button2 = tkinter.Button(rightFrame, text="button2")
 button3 = tkinter.Button(rightFrame, text="button3")
 
-button1.pack(side="top", anchor="n")
-button2.pack(side="top", anchor="s")
-button3.pack(side="top", anchor="e")
+button1.pack(side="top")
+button2.pack(side="top")
+button3.pack(side="top")
 
 mainWindow.mainloop()
