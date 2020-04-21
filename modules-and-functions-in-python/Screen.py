@@ -1,6 +1,6 @@
 try:
     import tkinter
-except ImportError:     # Python 2
+except ImportError:  # Python 2
     import Tkinter as tkinter
 
 mainWindow = tkinter.Tk()
@@ -18,5 +18,11 @@ mainWindow.columnconfigure(2, weight=3)
 mainWindow.columnconfigure(3, weight=3)
 mainWindow.columnconfigure(4, weight=3)
 
+# row conf added
+mainWindow.rowconfigure(0, weight=1)
+mainWindow.rowconfigure(1, weight=10)
+mainWindow.rowconfigure(2, weight=1)
+mainWindow.rowconfigure(3, weight=3)
+mainWindow.rowconfigure(4, weight=3)
 
 mainWindow.mainloop()
