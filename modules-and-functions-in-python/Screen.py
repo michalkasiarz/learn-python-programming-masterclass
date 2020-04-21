@@ -57,3 +57,6 @@ radio2.grid(row=1, column=0, sticky="w")
 radio3.grid(row=2, column=0, sticky="w")
 
 mainWindow.mainloop()
+
+# print the radio button of choice to the console
+print(rbValue.get())
