@@ -77,6 +77,9 @@ minuteSpinner.grid(row=0, column=2)
 tkinter.Label(timeFrame, text=":").grid(row=0, column=3)
 secondSpinner.grid(row=0, column=4)
 
+# padding added
+timeFrame["padx"] = 36
+
 mainWindow.mainloop()
 
 # prints the radio button of choice to the console
