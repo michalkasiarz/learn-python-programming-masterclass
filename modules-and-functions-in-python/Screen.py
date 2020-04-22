@@ -84,7 +84,14 @@ timeFrame["padx"] = 36
 dateFrame = tkinter.Frame(mainWindow)
 dateFrame.grid(row=4, column=0, sticky="new")
 
+# date labels
+dayLabel = tkinter.Label(dateFrame, text="Day")
+monthLabel = tkinter.Label(dateFrame, text="Month")
+yearLabel = tkinter.Label(dateFrame, text="Year")
 
+dayLabel.grid(row=0, column=0, sticky="w")
+monthLabel.grid(row=0, column=1, sticky="w")
+yearLabel.grid(row=0, column=2, sticky="w")
 
 mainWindow.mainloop()
 
