@@ -80,6 +80,12 @@ secondSpinner.grid(row=0, column=4)
 # padding added
 timeFrame["padx"] = 36
 
+# frame for the date spinners
+dateFrame = tkinter.Frame(mainWindow)
+dateFrame.grid(row=4, column=0, sticky="new")
+
+
+
 mainWindow.mainloop()
 
 # prints the radio button of choice to the console
