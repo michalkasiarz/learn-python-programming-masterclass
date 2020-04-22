@@ -64,7 +64,19 @@ result.grid(row=2, column=2, sticky="sw")
 
 # frame for the time spinners
 timeFrame = tkinter.LabelFrame(mainWindow, text="Time")
-timeFrame.grid(row=0, column=0, sticky="new")
+timeFrame.grid(row=3, column=0, sticky="new")
+
+# time spinners
+hourSpinner = tkinter.Spinbox(timeFrame, width=2, values=tuple(range(0, 24)))
+minuteSpinner = tkinter.Spinbox(timeFrame, width=2, from_=0, to=59)
+secondSpinner = tkinter.Spinbox(timeFrame, width=2, from_=0, to=59)
+
+hourSpinner.grid(row=0, column=0)
+tkinter.Label(timeFrame, text=":").grid(row=0, column=1)
+minuteSpinner.grid(row=0, column=2)
+tkinter.Label(timeFrame, text=":").grid(row=0, column=3)
+secondSpinner.grid(row=0, column=4)
+
 mainWindow.mainloop()
 
 # prints the radio button of choice to the console
