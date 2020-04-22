@@ -93,25 +93,16 @@ dayLabel.grid(row=0, column=0, sticky="w")
 monthLabel.grid(row=0, column=1, sticky="w")
 yearLabel.grid(row=0, column=2, sticky="w")
 
+# date spinners
+daySpin = tkinter.Spinbox(dateFrame, width=5, from_=1, to=31)
+monthSpin = tkinter.Spinbox(dateFrame, width=5, values=("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))
+yearSpin = tkinter.Spinbox(dateFrame, width=5, from_=2000, to=2099)
+
+daySpin.grid(row=1, column=0)
+monthSpin.grid(row=1, column=1)
+yearSpin.grid(row=1, column=2)
+
 mainWindow.mainloop()
 
 # prints the radio button of choice to the console
 print(rbValue.get())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
