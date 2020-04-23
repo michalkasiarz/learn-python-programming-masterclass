@@ -102,6 +102,13 @@ daySpin.grid(row=1, column=0)
 monthSpin.grid(row=1, column=1)
 yearSpin.grid(row=1, column=2)
 
+# buttons
+okButton = tkinter.Button(mainWindow, text="OK")
+cancelButton = tkinter.Button(mainWindow, text="Cancel", command=mainWindow.destroy)
+okButton.grid(row=4, column=3, sticky="e")
+cancelButton.grid(row=4, column=4, sticky="w")
+
+
 mainWindow.mainloop()
 
 # prints the radio button of choice to the console
