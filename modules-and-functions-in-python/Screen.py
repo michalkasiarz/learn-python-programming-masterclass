@@ -9,16 +9,17 @@ mainWindow = tkinter.Tk()
 
 mainWindow.title("Grid Demo")
 mainWindow.geometry("640x480-8-200")
+mainWindow["padx"] = 8
 
 label = tkinter.Label(mainWindow, text="Tkinter Grid Demo")
 label.grid(row=0, column=0, columnspan=3)
 
 # column conf added
-mainWindow.columnconfigure(0, weight=1)
+mainWindow.columnconfigure(0, weight=10)
 mainWindow.columnconfigure(1, weight=1)
-mainWindow.columnconfigure(2, weight=3)
-mainWindow.columnconfigure(3, weight=3)
-mainWindow.columnconfigure(4, weight=3)
+mainWindow.columnconfigure(2, weight=1000)
+mainWindow.columnconfigure(3, weight=600)
+mainWindow.columnconfigure(4, weight=1000)
 
 # row conf added
 mainWindow.rowconfigure(0, weight=1)
@@ -45,7 +46,7 @@ optionFrame = tkinter.LabelFrame(mainWindow, text="File Details")
 optionFrame.grid(row=1, column=2, sticky="ne")
 
 rbValue = tkinter.IntVar()
-rbValue.set(3)
+rbValue.set(1)
 
 # radio buttons
 radio1 = tkinter.Radiobutton(optionFrame, text="Filename", value=1, variable=rbValue)
