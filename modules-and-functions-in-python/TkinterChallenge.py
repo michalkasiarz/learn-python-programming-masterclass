@@ -26,12 +26,13 @@ try:
 except ImportError:
     import Tkinter as tkinter
 
-keys = [[("C", 1, ("CE", 1))],
-        [("7", 1), ("8", 1), ("9", 1), ("+", 1)],
-        [("4", 1), ("5", 1), ("6", 1), ("-", 1)],
-        [("1", 1), ("2", 1), ("3", 1), ("*", 1)],
-        [("0", 1), ("-", 1), ("/", 1)],
+keys = [[('C', 1), ('CE', 1)],
+        [('7', 1), ('8', 1), ('9', 1), ('+', 1)],
+        [('4', 1), ('5', 1), ('6', 1), ('-', 1)],
+        [('1', 1), ('2', 1), ('3', 1), ('*', 1)],
+        [('0', 1), ('=', 1), ('/', 1)],
         ]
+
 
 mainWindowPadding = 0
 
@@ -53,5 +54,8 @@ for keyRow in keys:
         tkinter.Button(keyPad, text=key[0]).grid(row=row, column=col, columnspan=key[1], sticky=tkinter.E + tkinter.W)
         col += key[1]
     row += 1
+
+mainWindow.update()
+mainWindow.minsize(keyPad.winfo_width() + mainWindowPadding, result.winfo_height() + keyPad.winfo_height())
 
 mainWindow.mainloop()
