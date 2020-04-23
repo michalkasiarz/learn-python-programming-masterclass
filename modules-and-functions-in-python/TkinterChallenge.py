@@ -57,5 +57,6 @@ for keyRow in keys:
 
 mainWindow.update()
 mainWindow.minsize(keyPad.winfo_width() + mainWindowPadding, result.winfo_height() + keyPad.winfo_height())
+mainWindow.maxsize(keyPad.winfo_width() + mainWindowPadding, result.winfo_height() + keyPad.winfo_height())
 
 mainWindow.mainloop()
