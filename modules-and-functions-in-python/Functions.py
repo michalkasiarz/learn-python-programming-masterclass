@@ -1,5 +1,6 @@
 # Functions
 
+
 def python_food():
     width = 80
     text = "spam and eggs"
@@ -7,8 +8,13 @@ def python_food():
     print(" " * left_margin, text)
 
 
-# call the function
-python_food()
+def centre_text(text):
+    left_margin = (80 - len(text) // 2)
+    print(" " * left_margin, text)
 
-# returns None
-print(python_food())
+
+# call the function
+centre_text("spam and eggs")
+centre_text("spam, spam and eggs")
+centre_text("spam, spam, spam and spam")
+
