@@ -5,7 +5,7 @@ except ImportError:  # python 2
 
 
 def parabola(x):
-    y = x * x
+    y = x * x / 100
     return y
 
 
@@ -35,6 +35,6 @@ draw_axes(canvas)
 for x in range(-100, 100):
     y = parabola(x)
     print(y)
-    plot(canvas, x, y)
+    plot(canvas, x, -y)
 
 mainWindow.mainloop()
