@@ -18,6 +18,10 @@ def draw_axes(canvas):
     canvas.create_line(0, y_origin, 0, -y_origin, fill="navy")
 
 
+def plot(canvas, x, y):
+    canvas.create_line(x, y, x+1, y+1, fill="darkgreen")
+
+
 mainWindow = tkinter.Tk()
 
 mainWindow.title("Parabola")
@@ -31,5 +35,6 @@ draw_axes(canvas)
 for x in range(-100, 100):
     y = parabola(x)
     print(y)
+    plot(canvas, x, y)
 
 mainWindow.mainloop()
