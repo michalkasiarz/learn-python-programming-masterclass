@@ -20,8 +20,8 @@ def draw_axes(page):
     print(locals())
 
 
-def plot(canvas, x, y):
-    canvas.create_line(x, y, x + 1, y + 1, fill="darkgreen")
+def plot(page, x, y):
+    page.create_line(x, -y, x + 1, -y + 1, fill="darkgreen")
 
 
 mainWindow = tkinter.Tk()
@@ -34,8 +34,6 @@ canvas.grid(row=0, column=0)
 
 draw_axes(canvas)
 
-for x in range(-100, 100):
-    y = parabola(x)
-    plot(canvas, x, - y)
+parabola(canvas, 300)
 
 mainWindow.mainloop()
