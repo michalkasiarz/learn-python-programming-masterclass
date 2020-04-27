@@ -26,10 +26,24 @@ dealer_score_label = tkinter.IntVar()
 tkinter.Label(card_frame, text="Dealer", background="green", fg="white").grid(row=0, column=0)
 tkinter.Label(card_frame, text=dealer_score_label, background="green", fg="white").grid(row=1, column=0)
 
-# embedded frame hold the card images
+# embedded frame to hold the card images
 dealer_card_frame = tkinter.Frame(card_frame, background="green")
 dealer_card_frame.grid(row=0, column=1, sticky="ew", rowspan=2)
 
 player_score_label = tkinter.IntVar()
 tkinter.Label(card_frame, text="Player", background="green", fg="white").grid(row=2, column=0)
 tkinter.Label(card_frame, textvariable=player_score_label, background="green", fg="white").grid(row=3, column=0)
+
+# embedded frame to hold the card images
+player_card_frame = tkinter.Frame(card_frame, background="green")
+player_card_frame.grid(row=2, column=1, sticky="ew", rowspan=2)
+
+button_frame = tkinter.Frame(mainWindow)
+button_frame.grid(row=3, column=0, columnspan=3, sticky="w")
+
+dealer_button = tkinter.Button(button_frame, text="Dealer")
+dealer_button.grid(row=0, column=0)
+
+player_button = tkinter.Button(button_frame, text="Player")
+player_button.grid(row=0, column=1)
+
