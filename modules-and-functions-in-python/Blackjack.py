@@ -41,6 +41,24 @@ def deal_card(frame):
     return next_card
 
 
+def score_hand(hand):
+    # calculate the total score of all cards in the list
+    # only one ace can have the value of 11, and this will be reduce to 1 if the hand would bust
+    score = 0
+    ace = False
+    for next_card in hand:
+        card_value = next_card[0]
+        if card_value == 1 and not ace:
+            ace = True
+            card_value = 11
+        score += card_value
+        # if we would bust, check if there is an ace and subtract 10
+        if score > 21 and ace:
+            score -= 10
+            ace = False
+    return score
+
+
 def deal_dealer():
     deal_card(dealer_card_frame)
 
